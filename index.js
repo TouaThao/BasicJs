@@ -27,3 +27,37 @@ let selectedColor = null;// null
 ////////////////////////////
 //Reference type
 //They're object,function and array
+//This is an object
+let carObject = {
+    carName:'accord',
+    make: 'honda',
+    year: 2012,
+}
+console.log(carObject);
+carObject.carName = 'insight'
+console.log(carObject)
+//We could change and access to object by calling them and using the dot notation
+//Or we could use the bracket notation
+carObject['carName']='Crv'
+console.log(carObject)
+////////////////////////////
+//array
+//to access the index on the array you need to use the bracket
+let parkCar =['honda','toyota','subaru','GM']
+parkCar[4]='Audi'
+console.log(parkCar)
+console.log(parkCar[1])
+console.log(parkCar.length)
+////////////////////////////
+//function
+//Performing a task
+function greet(person){
+    console.log('Our First Function'+ ' ' + person)
+}
+greet('john')
+//calculate task
+function square(number){
+return number * number
+}
+console.log(square(2))
+
