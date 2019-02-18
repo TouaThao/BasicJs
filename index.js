@@ -133,8 +133,17 @@ console.log('Logical And (&&) example ',logicalOperandsA < 0 && logicalOperandsB
 //We need to check if they have a job and good credit.
 //This will have to check for both to be approve.
 //If one or the other is false we will return false.
-let highIncome = true;
-let goodCreditScore = true;
-let eligibleForLoan = highIncome && goodCreditScore;
-console.log('This is for the loan case',eligibleForLoan);
-//Logical Or()
+let logicalAndHighIncome = true;
+let logicalAndGoodCreditScore = true;
+let logicalAndEligibleForLoan = logicalAndHighIncome && logicalAndGoodCreditScore;
+console.log('This is for the loan case, using logicalAnd',logicalAndEligibleForLoan);
+//Logical Or(||)
+//This check if one of the operand is true or not. 
+// It don't care if one is false, as long as one is true.
+let logicalOrHighIncome = false;
+let logicalOrGoodCreditScore = false;
+let logicalOrEligibleForLoan = logicalOrHighIncome || logicalOrGoodCreditScore;
+console.log('This is for the loan case, using logicalOr',logicalOrEligibleForLoan)
+//Not by using !
+let applicationRefuse = !logicalOrEligibleForLoan;// applicationRefuse is true because both income and score is false
+console.log('application Refuse', applicationRefuse)
