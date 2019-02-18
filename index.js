@@ -89,5 +89,11 @@ console.log('mutiply',assignmentX);
 ////////////////////////////
 //comparison operator
 let comparisonX = 2
+//relational
 console.log(comparisonX > 4);
 console.log(comparisonX < 4);
+console.log(comparisonX <= 2);
+console.log(comparisonX >= 2);
+//Equaility 
+console.log(comparisonX === 2);
+console.log(comparisonX !== 2);
