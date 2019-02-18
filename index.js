@@ -60,4 +60,34 @@ function square(number){
 return number * number
 }
 console.log(square(2))
-
+////////////////////////////
+//Arithmetic Operator
+let arithmeticX = 10;
+let arithmeticY = 5 ;
+console.log(arithmeticX + arithmeticY)
+console.log(arithmeticX - arithmeticY)
+console.log(arithmeticX * arithmeticY)
+console.log(arithmeticX / arithmeticY)
+console.log(arithmeticX % arithmeticY)
+console.log(arithmeticX ** arithmeticY)
+//increment and decrement
+arithmeticX --
+arithmeticY ++
+console.log(arithmeticX)
+console.log(arithmeticY)
+////////////////////////////
+//assignment operator
+let assignmentX = 10
+assignmentX = assignmentX + 5;
+console.log('assignmentX',assignmentX);
+assignmentX = assignmentX * 3;
+console.log('new assignmentX',assignmentX);
+assignmentX += 6;
+console.log('addition',assignmentX);
+assignmentX *= 2;
+console.log('mutiply',assignmentX);
+////////////////////////////
+//comparison operator
+let comparisonX = 2
+console.log(comparisonX > 4);
+console.log(comparisonX < 4);
