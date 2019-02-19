@@ -147,3 +147,21 @@ console.log('This is for the loan case, using logicalOr',logicalOrEligibleForLoa
 //Not by using !
 let applicationRefuse = !logicalOrEligibleForLoan;// applicationRefuse is true because both income and score is false
 console.log('application Refuse', applicationRefuse)
+//Falsy (false)
+//undefine
+//null
+//NaN
+//0
+//''
+//false
+//example: false || 'Toua'. It would return 'Toua'
+//It's not an empty string and it have some value, so it is a truthy
+//Anything that is not Falsy is Truthy
+//short circuiting example: false || 1 || 2. it return 1 and ignore 2.
+//Real world example. We need to find out which color the user pick,
+//If the user pick red then we will get red. Unless user color is undefine we will get 
+//default color blue
+let falsyUserColor = 'red';
+let falsyDefaultColor = 'blue';
+let falsyCurrentColor = falsyUserColor || falsyDefaultColor;
+console.log('falsy color example',falsyCurrentColor)
