@@ -165,3 +165,31 @@ let falsyUserColor = 'red';
 let falsyDefaultColor = 'blue';
 let falsyCurrentColor = falsyUserColor || falsyDefaultColor;
 console.log('falsy color example',falsyCurrentColor)
+////////////////////////////
+//bitWise
+// 1 = 00000001
+// 2 = 00000010
+// R = 00000011
+console.log('bitwise OR',1 | 2);//bitWise OR
+// 1 = 00000001
+// 2 = 00000010
+// R = 00000000
+// It will return 0 because we need to check 1 first. And on the 7th slot we got Zero 
+// And when we check 2 zero. the zero from 1 7th slot will replace the 2 one to zero.
+// Hence forth we get zero
+console.log('bitwise And', 1 & 2 );//bitWise And
+//Real life example: read, write , execute permission
+// 00000100 read
+// 00000110 read and write
+// 00000111 read, write and execute
+const bitWiseReadPermission = 4;// 00000100
+const bitWiseWritePermission = 2;// 00000010
+const bitWiseExecutePermission = 1;// 00000001
+let bitWiseMyPermission = 0;// 00000000
+bitWiseMyPermission = bitWiseMyPermission | bitWiseReadPermission | bitWiseWritePermission;
+console.log('bitWise Permission',bitWiseMyPermission)// we got 6 because read and write = 4 + 2
+//using ternary operator
+let myBitWiseMessage = (bitWiseMyPermission & bitWiseReadPermission ) ? 'yes' : 'no';
+//So message is checking if i have myPermission and readPermission. it will return yes or no
+//If we change or remove readPermission from mypermission than my message will return us a no
+console.log('bitWise message', myBitWiseMessage)
