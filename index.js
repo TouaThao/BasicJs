@@ -216,4 +216,28 @@ console.log('exceriseA',exceriseA);
 console.log('exceriseB',exceriseB);
 ////////////////////////////
 //if Else
+//if the hours is between 6am to 12pm: good morning!
+//if the hours is between 12pm to 6pm: good afternoon!
+//otherwise: good evening
+let ifElsehours = 12;
+
+if(ifElsehours >= 6 && ifElsehours <12)
+    console.log('good morning')
+else if (ifElsehours >=12 && ifElsehours <18)
+console.log('good afternoon')
+else
+    console.log('good evening')
+////////////////////////////
+//switch and case
+let switchCaseUserRole;
+switch(switchCaseUserRole){
+case 'guest':
+console.log('switch and case,Guest user')
+break;
+case 'moderator':
+console.log('switch and case, moderator')
+break;
+default:
+console.log('switch and case, unknow user')
+}
 
