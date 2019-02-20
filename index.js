@@ -193,3 +193,27 @@ let myBitWiseMessage = (bitWiseMyPermission & bitWiseReadPermission ) ? 'yes' : 
 //So message is checking if i have myPermission and readPermission. it will return yes or no
 //If we change or remove readPermission from mypermission than my message will return us a no
 console.log('bitWise message', myBitWiseMessage)
+////////////////////////////
+//Precedence 
+let precedenceX = 2+4*5;
+//we will get 22. FOILS
+console.log('precedence',precedenceX);
+////////////////////////////
+//excerise
+let exceriseA = 'red';
+let exceriseB = 'blue';
+console.log('exceriseA',exceriseA);
+console.log('exceriseB',exceriseB);
+//Now how do we swap A and B value around??
+//
+//
+//Answer
+// So one answer is to create a back up variable. exceriseC
+let exceriseC = exceriseA;
+exceriseA = exceriseB;
+exceriseB = exceriseC;
+console.log('exceriseA',exceriseA);
+console.log('exceriseB',exceriseB);
+////////////////////////////
+//if Else
+
