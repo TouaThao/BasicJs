@@ -232,12 +232,27 @@ else
 let switchCaseUserRole;
 switch(switchCaseUserRole){
 case 'guest':
-console.log('switch and case,Guest user')
+console.log('switch and case,Guest user');
 break;
 case 'moderator':
-console.log('switch and case, moderator')
+console.log('switch and case, moderator user');
 break;
 default:
-console.log('switch and case, unknow user')
+console.log('switch and case, unknow user');
 }
-
+////////////////////////////
+//Loops
+//For loops
+//explain the code:
+// So we do a for loop. It take in a intial expression.(inital expression)
+//Then we terminate the statement with the semicolon.
+//Next we do put a condition after the inital expression. (inital expression ; condition)
+//The condition will run until it become true. i.e loopI is less than or equal to 5 so it will run and stop when loopI become
+// more than 5. And the last part is increment it by 1 everytime it finish the loop.
+//In the loop we could put in our statment, result or if/else,for loop etc.
+//So the loopI will become 1. finish loop. loopI become 2. and so on. 
+for( let loopI = 0; loopI <= 5; loopI++ ){
+    console.log('For loop, Hello World',loopI)
+    //we check the remainder of loopI by 2. And if it not equal to 0, than loopI is a odd number.
+    if( loopI % 2 !== 0) console.log('loopI is odd',loopI); 
+}
