@@ -256,3 +256,19 @@ for( let loopI = 0; loopI <= 5; loopI++ ){
     //we check the remainder of loopI by 2. And if it not equal to 0, than loopI is a odd number.
     if( loopI % 2 !== 0) console.log('loopI is odd',loopI); 
 }
+//Now we could do reverse
+for(let loopI=5; loopI >= 1; loopI--){
+    console.log('We`re going backward.',loopI)
+}
+//Testing reverse with function to return a reverse string
+// function reverseWord(string){
+//     let newString ='';
+// for(let i = string.length - 1; i >=1;i-- ){
+//     newString += string[i]
+// }
+// console.log('what is the new string',newString)
+// return newString;
+// }
+// reverseWord('race car')
+
+
